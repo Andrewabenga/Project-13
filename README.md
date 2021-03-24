@@ -9,7 +9,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   - _TODO: Enter the playbook file._
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -61,12 +61,14 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+- What is the main advantage of automating configuration with Ansible? Single point of configuration, management and provisioning.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+-In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+i)install docker
+ii) install pip3
+iii) install docker python module
+iv) Download and lunch docker ELK container
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
