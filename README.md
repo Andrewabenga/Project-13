@@ -70,9 +70,9 @@ ii) install pip3
 iii) install docker python module
 iv) Download and lunch docker ELK container
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance. /Images/install ELK Playbook
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+Images/docker ps
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
