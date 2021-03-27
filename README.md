@@ -98,4 +98,4 @@ Ansible_python_interpreter=/urs/bin/python3
 - _Which URL do you navigate to in order to check that the ELK server is running? Public IP address of the ELK-server on port 5601 (13.92.139.174:5601)
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-ansible-playbook  *.yml nano hosts, nano ansible.cfg nano *.yml
+ansible-playbook your-playbook.yml *.yml nano hosts, nano ansible.cfg nano *.yml
