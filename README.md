@@ -6,7 +6,7 @@ Diagram/project-13.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  - Enter the playbook file._
 
 This document contains the following details:
 - Description of the Topology
@@ -15,8 +15,6 @@ This document contains the following details:
   - Beats in Use
   - Machines Being Monitored
 - How to Use the Ansible Build
-
-
 
 ### Description of the Topology
 
@@ -30,7 +28,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - What does Metricbeat record?_ Machine metrics such as uptime/downtime and usage
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -54,9 +51,9 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 | 10.0.0.4 10.0.0.30    |
-| /Images/SSHAccess|                     |                      |
-| /Images/Jump-Box-ip|                   |                      |
+| Jump Box | Yes                 | 10.0.0.4 10.0.0.30   |
+| /Images/SSHAccess|             |                      |
+| /Images/Jump-Box-ip|           |                      |
 
 ### Elk Configuration
 
@@ -96,9 +93,9 @@ SSH into the control node and follow the steps below:
 Ansible_python_interpreter=/urs/bin/python3
 - Run the playbook, and navigate to 10.0..0.5 and curl localhost/setup.php  to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- Which file is the playbook? Where do you copy it? Ansible-playbook.yml /etc/ansible
+- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? It is updated on the hosts files, when add the hosts name elk into the webservers group followd by the IP address for the ELK-SERVER 10.1.0.4 /ansible/hosts-file.txt
+- _Which URL do you navigate to in order to check that the ELK server is running? Public IP address of the ELK-server on port 5601 (13.92.139.174:5601)
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+ansible-playbook  *.yml nano hosts, nano ansible.cfg nano *.yml
