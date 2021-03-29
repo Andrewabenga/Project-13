@@ -51,8 +51,12 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 | 10.0.0.4 10.0.0.30   |
-| /Images/SSHAccess|             |                      |
+|Jump Box  | Yes                 | 10.0.0.4 10.0.0.30   |
+|Elk Server| No                  | 10.1.0.0/24          |
+|Web-1     | No                  | 10.0.0.5/24
+|Web-2     | No                  | 10.0.0.6/24
+|Web-3     | No                  | 10.0.0.7/24
+|/Images/SSHAccess|              |                      |
 | /Images/Jump-Box-ip|           |                      |
 
 ### Elk Configuration
